@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CompareInsta - password</title>
-    <link rel="stylesheet" href="../codigo/styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CompareInsta - password</title>
+  <link rel="stylesheet" href="../codigo/styles/style.css" />
 </head>
+
 <body>
-    <div>
-        <h2>generador</h2>
-        <div>
-            largo: <input type="number" id="l" value="12" min="4" max="64">
-        </div>
-        <div>
-            <input type="checkbox" id="s"> simbolos
-        </div>
-        <div>
-            <input type="checkbox" id="n"> nums
-        </div>
-        <div>
-            <input type="checkbox" id="u"> mayus
-        </div>
-        <div>
-            <button onclick="generarPassword()">generar</button>
-            <button onclick="copiarPassword()">copiar</button>
-        </div>
-        <div id="r">-</div>
-        <div id="msg" style="color:green;display:none">copiado!</div>
+  <div class="container">
+   <h2>Compare<strong>Insta</strong></h2>
+
+    <div class="password-display" id="passwordDisplay">
+      Presioná Generar
     </div>
 
-    <script src="../codigo/scripts/script.js"></script>
+    <div class="strength-bar">
+      <div class="strength-fill" id="strengthFill"></div>
+    </div>
+    <div class="strength-label" id="strengthLabel">—</div>
+
+    <div class="control-row">
+      <label for="lengthSlider">Longitud</label>
+      <span id="lengthDisplay">12</span>
+    </div>
+    <input type="range" id="lengthSlider" min="4" max="64" value="12" />
+
+    <div class="options">
+      <label class="option">
+        <input type="checkbox" id="chkLower" checked /> Minúsculas
+      </label>
+      <label class="option">
+        <input type="checkbox" id="chkUpper" checked /> Mayúsculas
+      </label>
+      <label class="option">
+        <input type="checkbox" id="chkNumbers" checked /> Números
+      </label>
+      <label class="option">
+        <input type="checkbox" id="chkSymbols" /> Símbolos
+      </label>
+    </div>
+
+    <div class="buttons">
+      <button id="generateBtn">Generar</button>
+      <button id="copyBtn">Copiar</button>
+    </div>
+  </div>
+
+  <script src="../codigo/scripts/script.js"></script>
 </body>
 </html>

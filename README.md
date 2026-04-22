@@ -96,3 +96,4 @@ calcularFuerza(p)	Calcula un puntaje de fuerza (0-5) según longitud y complejid
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia MIT. Ver [LICENSE](LICENSE) para más detalles.
+"# CleanCode" 

@@ -1,0 +1,31 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: arial;
+}
+
+div {
+    margin: 10px;
+}
+
+input {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 5px;
+}
+
+button {
+    background: #c13584;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#r {
+    background: #222;
+    padding: 10px;
+    margin-top: 10px;
+    word-break: break-all;
+}

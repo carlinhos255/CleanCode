@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompareInsta - password</title>
+    <link rel="stylesheet" href="../codigo/styles/style.css">
+</head>
+<body>
+    <div>
+        <h2>generador</h2>
+        <div>
+            largo: <input type="number" id="l" value="12" min="4" max="64">
+        </div>
+        <div>
+            <input type="checkbox" id="s"> simbolos
+        </div>
+        <div>
+            <input type="checkbox" id="n"> nums
+        </div>
+        <div>
+            <input type="checkbox" id="u"> mayus
+        </div>
+        <div>
+            <button onclick="generarPassword()">generar</button>
+            <button onclick="copiarPassword()">copiar</button>
+        </div>
+        <div id="r">-</div>
+        <div id="msg" style="color:green;display:none">copiado!</div>
+    </div>
+
+    <script src="../codigo/scripts/script.js"></script>
+</body>
+</html>
